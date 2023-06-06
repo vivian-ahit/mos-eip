@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.logo .logo_deco {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+.logo .logo_deco .circle {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+}
+.logo .logo_deco .circle.yellow {
+  background-color: #c39b4e;
+}
+.logo .logo_deco .circle.red {
+  background-color: #B12E26;
+}
+.logo .logo_deco .circle.green {
+  background-color: #3e6332;
+}
+.logo .logo_deco .deco_pad, .logo .logo_deco .deco_pc {
+  display: none;
+}
+.logo .mos_slogan {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.logo .mos_slogan .logo_img {
+  margin: 5px;
+  padding: 10px 5px 0px 5px;
+}
+.logo .mos_slogan .logo_img img {
+  width: 3rem;
+}
+.logo .mos_slogan .logo_txt {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+.logo .mos_slogan .logo_txt h1 {
+  font-size: 18px;
+  color: #696969;
+}
+.logo .mos_slogan .logo_txt span {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    justify-content: center;
+  }
+  .logo .logo_deco .circle {
+    width: 12px;
+    height: 12px;
+    margin: 8px;
+  }
+  .logo .logo_deco .deco_pad {
+    display: block;
+    display: flex;
+  }
+  .logo .mos_slogan .logo_img img {
+    width: 3rem;
+  }
+  .logo .mos_slogan .logo_txt h1 {
+    font-size: 20px;
+    color: #696969;
+  }
+}
+@media (min-width: 1200px) {
+  .logo .logo_deco .circle {
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+  }
+  .logo .logo_deco .deco_pc {
+    display: block;
+    display: flex;
+  }
+  .logo .mos_slogan .logo_img img {
+    width: 4rem;
+  }
+  .logo .mos_slogan .logo_txt h1 {
+    font-size: 28px;
+    color: #696969;
+  }
+  .logo .mos_slogan .logo_txt span {
+    display: block;
+    font-size: 12px;
+    color: #8b8b8b;
+  }
+}/*# sourceMappingURL=style.css.map */
