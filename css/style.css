@@ -63,18 +63,21 @@
   background-color: #F8EFD9;
   border-radius: 10px;
   margin: 20px;
-  padding: 5px;
+  padding: 4px;
 }
 .main .corporate .corporate_icon, .main .corporate .operate_icon, .main .corporate .usual_icon, .main .operate .corporate_icon, .main .operate .operate_icon, .main .operate .usual_icon, .main .usual .corporate_icon, .main .usual .operate_icon, .main .usual .usual_icon {
   display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
   grid-template-columns: repeat(3, 1fr);
 }
 .main .corporate .corporate_icon .card, .main .corporate .operate_icon .card, .main .corporate .usual_icon .card, .main .operate .corporate_icon .card, .main .operate .operate_icon .card, .main .operate .usual_icon .card, .main .usual .corporate_icon .card, .main .usual .operate_icon .card, .main .usual .usual_icon .card {
   box-sizing: border-box;
-  width: 90px;
-  height: 90px;
+  width: 96px;
+  height: 96px;
   padding: 3px;
-  margin: 12px;
+  margin: 10px;
 }
 .main .corporate .corporate_icon .card:hover, .main .corporate .operate_icon .card:hover, .main .corporate .usual_icon .card:hover, .main .operate .corporate_icon .card:hover, .main .operate .operate_icon .card:hover, .main .operate .usual_icon .card:hover, .main .usual .corporate_icon .card:hover, .main .usual .operate_icon .card:hover, .main .usual .usual_icon .card:hover {
   cursor: pointer;
@@ -198,6 +201,19 @@
   .logo .mos_slogan .logo_txt h1 {
     font-size: 20px;
     color: #696969;
+  }
+  .main .corporate .corporate_icon, .main .corporate .operate_icon, .main .corporate .usual_icon, .main .operate .corporate_icon, .main .operate .operate_icon, .main .operate .usual_icon, .main .usual .corporate_icon, .main .usual .operate_icon, .main .usual .usual_icon {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .main .corporate .corporate_icon .card, .main .corporate .operate_icon .card, .main .corporate .usual_icon .card, .main .operate .corporate_icon .card, .main .operate .operate_icon .card, .main .operate .usual_icon .card, .main .usual .corporate_icon .card, .main .usual .operate_icon .card, .main .usual .usual_icon .card {
+    margin-bottom: 30px;
+  }
+  .main .corporate .corporate_icon .card .icon, .main .corporate .operate_icon .card .icon, .main .corporate .usual_icon .card .icon, .main .operate .corporate_icon .card .icon, .main .operate .operate_icon .card .icon, .main .operate .usual_icon .card .icon, .main .usual .corporate_icon .card .icon, .main .usual .operate_icon .card .icon, .main .usual .usual_icon .card .icon {
+    width: 70px;
+    height: 70px;
+  }
+  .corporate_title, .operate_title, .usual_title {
+    font-size: 24px;
   }
 }
 @media (min-width: 1200px) {

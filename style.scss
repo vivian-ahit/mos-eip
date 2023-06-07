@@ -67,16 +67,19 @@
         background-color: #F8EFD9;
         border-radius: 10px;
         margin: 20px;
-        padding: 5px;
+        padding: 4px;
         .corporate_icon, .operate_icon, .usual_icon{
             display: grid;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
             grid-template-columns: repeat(3,1fr);
             .card {
                 box-sizing: border-box;
-                width: 90px;
-                height: 90px;
+                width: 96px;
+                height: 96px;
                 padding: 3px;
-                margin: 12px;
+                margin: 10px;
                 &:hover {
                     cursor: pointer;
                 }
@@ -208,21 +211,7 @@
     }
 }
 
-@media screen and (max-width:767px){
-    .classifyleft{
-        .corporate{
-            .corporate_icon{
-                .card{
-                    // &:hover>.icon .material-symbols-outlined {
-                    //     color: #fff;
-                    //     font-size: 40px;
-                    //     transition: 0.8s;
-                    // }
-                }
-            }
-        }
-    }
-}
+
 
 
 @media screen and (min-width:768px){
@@ -253,6 +242,23 @@
                 }
             }
         }
+    }
+    .main{
+        .corporate, .operate, .usual{
+            .corporate_icon, .operate_icon, .usual_icon{
+                grid-template-columns: repeat(6,1fr);
+                .card {
+                    margin-bottom: 30px;    
+                    .icon {
+                        width: 70px;
+                        height: 70px;
+                    }
+                } 
+            }
+        }
+    }
+    .corporate_title, .operate_title, .usual_title{
+        font-size: 24px;
     }
     
 }
