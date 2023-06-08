@@ -99,7 +99,7 @@
   background: url("../img/agentflow-gold.svg") no-repeat;
   background-position: center;
   width: 100%;
-  background-size: 65%;
+  background-size: 55%;
 }
 .main .corporate .corporate_icon .card .icon .material-symbols-outlined, .main .corporate .operate_icon .card .icon .material-symbols-outlined, .main .corporate .usual_icon .card .icon .material-symbols-outlined, .main .operate .corporate_icon .card .icon .material-symbols-outlined, .main .operate .operate_icon .card .icon .material-symbols-outlined, .main .operate .usual_icon .card .icon .material-symbols-outlined, .main .usual .corporate_icon .card .icon .material-symbols-outlined, .main .usual .operate_icon .card .icon .material-symbols-outlined, .main .usual .usual_icon .card .icon .material-symbols-outlined {
   margin: auto;
@@ -127,7 +127,7 @@
   background: url("../img/agentflow-white.svg") no-repeat;
   background-position: center;
   transition: 0.6s;
-  background-size: 70%;
+  background-size: 60%;
 }
 .main .operate {
   background-color: rgba(235, 177, 175, 0.2862745098);
@@ -204,15 +204,27 @@
   }
   .main .corporate .corporate_icon, .main .corporate .operate_icon, .main .corporate .usual_icon, .main .operate .corporate_icon, .main .operate .operate_icon, .main .operate .usual_icon, .main .usual .corporate_icon, .main .usual .operate_icon, .main .usual .usual_icon {
     grid-template-columns: repeat(6, 1fr);
+    padding: 10px;
   }
   .main .corporate .corporate_icon .card, .main .corporate .operate_icon .card, .main .corporate .usual_icon .card, .main .operate .corporate_icon .card, .main .operate .operate_icon .card, .main .operate .usual_icon .card, .main .usual .corporate_icon .card, .main .usual .operate_icon .card, .main .usual .usual_icon .card {
-    margin-bottom: 30px;
+    width: 108px;
+    height: 108px;
+    margin: 10px 0px 50px;
   }
   .main .corporate .corporate_icon .card .icon, .main .corporate .operate_icon .card .icon, .main .corporate .usual_icon .card .icon, .main .operate .corporate_icon .card .icon, .main .operate .operate_icon .card .icon, .main .operate .usual_icon .card .icon, .main .usual .corporate_icon .card .icon, .main .usual .operate_icon .card .icon, .main .usual .usual_icon .card .icon {
     width: 70px;
     height: 70px;
   }
-  .corporate_title, .operate_title, .usual_title {
+  .main .corporate .corporate_icon .card .icon .material-symbols-outlined, .main .corporate .operate_icon .card .icon .material-symbols-outlined, .main .corporate .usual_icon .card .icon .material-symbols-outlined, .main .operate .corporate_icon .card .icon .material-symbols-outlined, .main .operate .operate_icon .card .icon .material-symbols-outlined, .main .operate .usual_icon .card .icon .material-symbols-outlined, .main .usual .corporate_icon .card .icon .material-symbols-outlined, .main .usual .operate_icon .card .icon .material-symbols-outlined, .main .usual .usual_icon .card .icon .material-symbols-outlined {
+    font-size: 40px;
+  }
+  .main .corporate .corporate_icon .card:hover > .icon .material-symbols-outlined, .main .corporate .operate_icon .card:hover > .icon .material-symbols-outlined, .main .corporate .usual_icon .card:hover > .icon .material-symbols-outlined, .main .operate .corporate_icon .card:hover > .icon .material-symbols-outlined, .main .operate .operate_icon .card:hover > .icon .material-symbols-outlined, .main .operate .usual_icon .card:hover > .icon .material-symbols-outlined, .main .usual .corporate_icon .card:hover > .icon .material-symbols-outlined, .main .usual .operate_icon .card:hover > .icon .material-symbols-outlined, .main .usual .usual_icon .card:hover > .icon .material-symbols-outlined {
+    font-size: 45px;
+  }
+  .main .corporate .corporate_icon .card .card-txt, .main .corporate .operate_icon .card .card-txt, .main .corporate .usual_icon .card .card-txt, .main .operate .corporate_icon .card .card-txt, .main .operate .operate_icon .card .card-txt, .main .operate .usual_icon .card .card-txt, .main .usual .corporate_icon .card .card-txt, .main .usual .operate_icon .card .card-txt, .main .usual .usual_icon .card .card-txt {
+    font-size: 16px;
+  }
+  .main .corporate_title, .main .operate_title, .main .usual_title {
     font-size: 24px;
   }
 }
@@ -237,5 +249,62 @@
     display: block;
     font-size: 12px;
     color: #8b8b8b;
+  }
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+  .main .classifyleft {
+    width: 55%;
+  }
+  .main .classifyright {
+    width: 38%;
+  }
+  .main .classifyright .usual .usual_icon {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .main .corporate_title, .main .operate_title, .main .usual_title {
+    font-size: 28px;
+  }
+}
+@media (min-width: 1440px) {
+  .main .classifyleft .corporate .corporate_icon .card, .main .classifyleft .corporate .operate_icon .card, .main .classifyleft .corporate .usual_icon .card, .main .classifyleft .operate .corporate_icon .card, .main .classifyleft .operate .operate_icon .card, .main .classifyleft .operate .usual_icon .card, .main .classifyleft .usual .corporate_icon .card, .main .classifyleft .usual .operate_icon .card, .main .classifyleft .usual .usual_icon .card, .main .classifyright .corporate .corporate_icon .card, .main .classifyright .corporate .operate_icon .card, .main .classifyright .corporate .usual_icon .card, .main .classifyright .operate .corporate_icon .card, .main .classifyright .operate .operate_icon .card, .main .classifyright .operate .usual_icon .card, .main .classifyright .usual .corporate_icon .card, .main .classifyright .usual .operate_icon .card, .main .classifyright .usual .usual_icon .card {
+    width: 120px;
+    height: 120px;
+  }
+  .main .classifyleft .corporate .corporate_icon .card .icon, .main .classifyleft .corporate .operate_icon .card .icon, .main .classifyleft .corporate .usual_icon .card .icon, .main .classifyleft .operate .corporate_icon .card .icon, .main .classifyleft .operate .operate_icon .card .icon, .main .classifyleft .operate .usual_icon .card .icon, .main .classifyleft .usual .corporate_icon .card .icon, .main .classifyleft .usual .operate_icon .card .icon, .main .classifyleft .usual .usual_icon .card .icon, .main .classifyright .corporate .corporate_icon .card .icon, .main .classifyright .corporate .operate_icon .card .icon, .main .classifyright .corporate .usual_icon .card .icon, .main .classifyright .operate .corporate_icon .card .icon, .main .classifyright .operate .operate_icon .card .icon, .main .classifyright .operate .usual_icon .card .icon, .main .classifyright .usual .corporate_icon .card .icon, .main .classifyright .usual .operate_icon .card .icon, .main .classifyright .usual .usual_icon .card .icon {
+    width: 80px;
+    height: 80px;
+  }
+  .main .classifyleft .corporate .corporate_icon .card .icon .material-symbols-outlined, .main .classifyleft .corporate .operate_icon .card .icon .material-symbols-outlined, .main .classifyleft .corporate .usual_icon .card .icon .material-symbols-outlined, .main .classifyleft .operate .corporate_icon .card .icon .material-symbols-outlined, .main .classifyleft .operate .operate_icon .card .icon .material-symbols-outlined, .main .classifyleft .operate .usual_icon .card .icon .material-symbols-outlined, .main .classifyleft .usual .corporate_icon .card .icon .material-symbols-outlined, .main .classifyleft .usual .operate_icon .card .icon .material-symbols-outlined, .main .classifyleft .usual .usual_icon .card .icon .material-symbols-outlined, .main .classifyright .corporate .corporate_icon .card .icon .material-symbols-outlined, .main .classifyright .corporate .operate_icon .card .icon .material-symbols-outlined, .main .classifyright .corporate .usual_icon .card .icon .material-symbols-outlined, .main .classifyright .operate .corporate_icon .card .icon .material-symbols-outlined, .main .classifyright .operate .operate_icon .card .icon .material-symbols-outlined, .main .classifyright .operate .usual_icon .card .icon .material-symbols-outlined, .main .classifyright .usual .corporate_icon .card .icon .material-symbols-outlined, .main .classifyright .usual .operate_icon .card .icon .material-symbols-outlined, .main .classifyright .usual .usual_icon .card .icon .material-symbols-outlined {
+    font-size: 45px;
+  }
+  .main .classifyleft .corporate .corporate_icon .card:hover > .icon .material-symbols-outlined, .main .classifyleft .corporate .operate_icon .card:hover > .icon .material-symbols-outlined, .main .classifyleft .corporate .usual_icon .card:hover > .icon .material-symbols-outlined, .main .classifyleft .operate .corporate_icon .card:hover > .icon .material-symbols-outlined, .main .classifyleft .operate .operate_icon .card:hover > .icon .material-symbols-outlined, .main .classifyleft .operate .usual_icon .card:hover > .icon .material-symbols-outlined, .main .classifyleft .usual .corporate_icon .card:hover > .icon .material-symbols-outlined, .main .classifyleft .usual .operate_icon .card:hover > .icon .material-symbols-outlined, .main .classifyleft .usual .usual_icon .card:hover > .icon .material-symbols-outlined, .main .classifyright .corporate .corporate_icon .card:hover > .icon .material-symbols-outlined, .main .classifyright .corporate .operate_icon .card:hover > .icon .material-symbols-outlined, .main .classifyright .corporate .usual_icon .card:hover > .icon .material-symbols-outlined, .main .classifyright .operate .corporate_icon .card:hover > .icon .material-symbols-outlined, .main .classifyright .operate .operate_icon .card:hover > .icon .material-symbols-outlined, .main .classifyright .operate .usual_icon .card:hover > .icon .material-symbols-outlined, .main .classifyright .usual .corporate_icon .card:hover > .icon .material-symbols-outlined, .main .classifyright .usual .operate_icon .card:hover > .icon .material-symbols-outlined, .main .classifyright .usual .usual_icon .card:hover > .icon .material-symbols-outlined {
+    font-size: 50px;
+  }
+  .main .classifyleft .corporate .corporate_icon .card .card-txt, .main .classifyleft .corporate .operate_icon .card .card-txt, .main .classifyleft .corporate .usual_icon .card .card-txt, .main .classifyleft .operate .corporate_icon .card .card-txt, .main .classifyleft .operate .operate_icon .card .card-txt, .main .classifyleft .operate .usual_icon .card .card-txt, .main .classifyleft .usual .corporate_icon .card .card-txt, .main .classifyleft .usual .operate_icon .card .card-txt, .main .classifyleft .usual .usual_icon .card .card-txt, .main .classifyright .corporate .corporate_icon .card .card-txt, .main .classifyright .corporate .operate_icon .card .card-txt, .main .classifyright .corporate .usual_icon .card .card-txt, .main .classifyright .operate .corporate_icon .card .card-txt, .main .classifyright .operate .operate_icon .card .card-txt, .main .classifyright .operate .usual_icon .card .card-txt, .main .classifyright .usual .corporate_icon .card .card-txt, .main .classifyright .usual .operate_icon .card .card-txt, .main .classifyright .usual .usual_icon .card .card-txt {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1920px) {
+  .main .classifyleft .corporate .corporate_icon .card, .main .classifyleft .corporate .operate_icon .card, .main .classifyleft .corporate .usual_icon .card, .main .classifyleft .operate .corporate_icon .card, .main .classifyleft .operate .operate_icon .card, .main .classifyleft .operate .usual_icon .card, .main .classifyleft .usual .corporate_icon .card, .main .classifyleft .usual .operate_icon .card, .main .classifyleft .usual .usual_icon .card, .main .classifyright .corporate .corporate_icon .card, .main .classifyright .corporate .operate_icon .card, .main .classifyright .corporate .usual_icon .card, .main .classifyright .operate .corporate_icon .card, .main .classifyright .operate .operate_icon .card, .main .classifyright .operate .usual_icon .card, .main .classifyright .usual .corporate_icon .card, .main .classifyright .usual .operate_icon .card, .main .classifyright .usual .usual_icon .card {
+    width: 140px;
+    height: 140px;
+  }
+  .main .classifyleft .corporate .corporate_icon .card .icon, .main .classifyleft .corporate .operate_icon .card .icon, .main .classifyleft .corporate .usual_icon .card .icon, .main .classifyleft .operate .corporate_icon .card .icon, .main .classifyleft .operate .operate_icon .card .icon, .main .classifyleft .operate .usual_icon .card .icon, .main .classifyleft .usual .corporate_icon .card .icon, .main .classifyleft .usual .operate_icon .card .icon, .main .classifyleft .usual .usual_icon .card .icon, .main .classifyright .corporate .corporate_icon .card .icon, .main .classifyright .corporate .operate_icon .card .icon, .main .classifyright .corporate .usual_icon .card .icon, .main .classifyright .operate .corporate_icon .card .icon, .main .classifyright .operate .operate_icon .card .icon, .main .classifyright .operate .usual_icon .card .icon, .main .classifyright .usual .corporate_icon .card .icon, .main .classifyright .usual .operate_icon .card .icon, .main .classifyright .usual .usual_icon .card .icon {
+    width: 100px;
+    height: 100px;
+  }
+  .main .classifyleft .corporate .corporate_icon .card .icon .material-symbols-outlined, .main .classifyleft .corporate .operate_icon .card .icon .material-symbols-outlined, .main .classifyleft .corporate .usual_icon .card .icon .material-symbols-outlined, .main .classifyleft .operate .corporate_icon .card .icon .material-symbols-outlined, .main .classifyleft .operate .operate_icon .card .icon .material-symbols-outlined, .main .classifyleft .operate .usual_icon .card .icon .material-symbols-outlined, .main .classifyleft .usual .corporate_icon .card .icon .material-symbols-outlined, .main .classifyleft .usual .operate_icon .card .icon .material-symbols-outlined, .main .classifyleft .usual .usual_icon .card .icon .material-symbols-outlined, .main .classifyright .corporate .corporate_icon .card .icon .material-symbols-outlined, .main .classifyright .corporate .operate_icon .card .icon .material-symbols-outlined, .main .classifyright .corporate .usual_icon .card .icon .material-symbols-outlined, .main .classifyright .operate .corporate_icon .card .icon .material-symbols-outlined, .main .classifyright .operate .operate_icon .card .icon .material-symbols-outlined, .main .classifyright .operate .usual_icon .card .icon .material-symbols-outlined, .main .classifyright .usual .corporate_icon .card .icon .material-symbols-outlined, .main .classifyright .usual .operate_icon .card .icon .material-symbols-outlined, .main .classifyright .usual .usual_icon .card .icon .material-symbols-outlined {
+    font-size: 60px;
+  }
+  .main .classifyleft .corporate .corporate_icon .card:hover > .icon .material-symbols-outlined, .main .classifyleft .corporate .operate_icon .card:hover > .icon .material-symbols-outlined, .main .classifyleft .corporate .usual_icon .card:hover > .icon .material-symbols-outlined, .main .classifyleft .operate .corporate_icon .card:hover > .icon .material-symbols-outlined, .main .classifyleft .operate .operate_icon .card:hover > .icon .material-symbols-outlined, .main .classifyleft .operate .usual_icon .card:hover > .icon .material-symbols-outlined, .main .classifyleft .usual .corporate_icon .card:hover > .icon .material-symbols-outlined, .main .classifyleft .usual .operate_icon .card:hover > .icon .material-symbols-outlined, .main .classifyleft .usual .usual_icon .card:hover > .icon .material-symbols-outlined, .main .classifyright .corporate .corporate_icon .card:hover > .icon .material-symbols-outlined, .main .classifyright .corporate .operate_icon .card:hover > .icon .material-symbols-outlined, .main .classifyright .corporate .usual_icon .card:hover > .icon .material-symbols-outlined, .main .classifyright .operate .corporate_icon .card:hover > .icon .material-symbols-outlined, .main .classifyright .operate .operate_icon .card:hover > .icon .material-symbols-outlined, .main .classifyright .operate .usual_icon .card:hover > .icon .material-symbols-outlined, .main .classifyright .usual .corporate_icon .card:hover > .icon .material-symbols-outlined, .main .classifyright .usual .operate_icon .card:hover > .icon .material-symbols-outlined, .main .classifyright .usual .usual_icon .card:hover > .icon .material-symbols-outlined {
+    font-size: 65px;
+  }
+  .main .classifyleft .corporate .corporate_icon .card .card-txt, .main .classifyleft .corporate .operate_icon .card .card-txt, .main .classifyleft .corporate .usual_icon .card .card-txt, .main .classifyleft .operate .corporate_icon .card .card-txt, .main .classifyleft .operate .operate_icon .card .card-txt, .main .classifyleft .operate .usual_icon .card .card-txt, .main .classifyleft .usual .corporate_icon .card .card-txt, .main .classifyleft .usual .operate_icon .card .card-txt, .main .classifyleft .usual .usual_icon .card .card-txt, .main .classifyright .corporate .corporate_icon .card .card-txt, .main .classifyright .corporate .operate_icon .card .card-txt, .main .classifyright .corporate .usual_icon .card .card-txt, .main .classifyright .operate .corporate_icon .card .card-txt, .main .classifyright .operate .operate_icon .card .card-txt, .main .classifyright .operate .usual_icon .card .card-txt, .main .classifyright .usual .corporate_icon .card .card-txt, .main .classifyright .usual .operate_icon .card .card-txt, .main .classifyright .usual .usual_icon .card .card-txt {
+    font-size: 20px;
+  }
+  .main .corporate_title, .main .operate_title, .main .usual_title {
+    font-size: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
