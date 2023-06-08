@@ -4,12 +4,14 @@
     padding: 0;
     margin: 0;
     font-family: 'Noto Sans TC', sans-serif;
+    text-decoration: none;
 }
 
 .logo{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 5px 0px 10px;
     .logo_deco{
         display: flex;
         align-items: center;
@@ -71,7 +73,7 @@
             display: grid;
             justify-content: center;
             justify-items: center;
-            align-items: center;
+            align-items: flex-start;
             grid-template-columns: repeat(3,1fr);
             .card {
                 box-sizing: border-box;
@@ -216,6 +218,7 @@
 @media screen and (min-width:768px){
     .logo{
         justify-content: center;
+        margin: 10px 0px 20px;
         .logo_deco{
             
             .circle{
@@ -277,6 +280,7 @@
 
 @media (min-width: 1200px) {
     .logo{
+        margin: 20px 0px 30px;
         .logo_deco{
             
             .circle{
@@ -335,17 +339,17 @@
             .corporate, .operate, .usual{
                 .corporate_icon, .operate_icon, .usual_icon{
                     .card {
-                        width: 120px;
-                        height: 120px;
+                        width: 125px;
+                        height: 125px;
                         .icon {
-                            width: 80px;
-                            height: 80px;
+                            width: 90px;
+                            height: 90px;
                             .material-symbols-outlined {
-                                font-size: 45px;
+                                font-size: 50px;
                             }
                         }
                         &:hover>.icon .material-symbols-outlined{
-                            font-size: 50px;
+                            font-size: 55px;
                         }
                         .card-txt{
                             font-size: 18px;
@@ -365,17 +369,17 @@
                         width: 140px;
                         height: 140px;
                         .icon {
-                            width: 100px;
-                            height: 100px;
+                            width: 120px;
+                            height: 120px;
                             .material-symbols-outlined {
-                                font-size: 60px;
+                                font-size: 70px;
                             }
                         }
                         &:hover>.icon .material-symbols-outlined{
-                            font-size: 65px;
+                            font-size: 75px;
                         }
                         .card-txt{
-                            font-size: 20px;
+                            font-size: 24px;
                         } 
                     }
                 }
